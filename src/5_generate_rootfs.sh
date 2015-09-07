@@ -22,6 +22,11 @@ mkdir root
 mkdir src
 mkdir sys
 mkdir tmp
+mkdir -p mnt/huge
+mkdir -p user/lib64/odp
+
+cp ../../hns_uio_enet_drv.ko ./
+cp ../../libEnet.so user/lib64/odp
 
 # "1" means that only the owner of a file/directory (or root) can remove it.
 chmod 1777 tmp
